@@ -3,7 +3,7 @@
 Kontajnery sú triedy, ktorých inštancie obsahujú dáta.
 STL poskytuje rôzne kontajnery pre rôzne potreby.
 
-####1. sekvenčné kontajnery
+#### 1. sekvenčné kontajnery
 sú kontajnery u ktorých má zmysel hovoriť o poradí prvkov - tj jednotlyvých uložených údajov/objektov
 
 
@@ -19,11 +19,11 @@ A -typ alokátoru (=objekt, ktorý riadi pridelovanie pamäte prvkom kontajneru,
 
 
 
-####2. asociatívne kontajnery 
+#### 2. asociatívne kontajnery 
 obsahujú dvojice kľúč-hodnota, pričom hodnotu možno z kontajneru získať po zadaní kľúča.
 Asociatívne kontajnery ďalej delíme na usporiadané a neusporiadané.
 
-#####usporiadané asociatívne kontajnery:
+##### usporiadané asociatívne kontajnery:
 
   | kontajner  |  popis |  
   |  ------  | ------    |
@@ -37,7 +37,7 @@ H - typ hodnoty
 P - typ komparátoru (= objekt alebo funkcia s preťaženým operátorom volania funkcie, ktorá porovnáva dvojice kľúčov a podľa toho určuje umiestnenie v strome)
 A - typ alokátoru (podobne ako v sekvenčných kontajneroch)
 
-#####neusporiadané asociatívne kontajnery:
+##### neusporiadané asociatívne kontajnery:
 
   | kontajner  |  popis |  
   |  ------  | ------    |
@@ -51,7 +51,7 @@ H- typ hodnoty
 HF - hešovacia funkcia (=typ volatelného objektu / ukazateľ na funkciu alebo objekt s preťaženým operátorom volania funkcie, pre väčšinu bežných dátových typov sa dá využiť implicitná hodnota tohto parametra, čo je hash<K> s parametrom K)
 R - nástoj pre zistenie rovnosti dvoch kľúčov (implicitná hodnota tohto parametru je equal<K>)
 
-###vektor
+### vektor
 
 Vektor spravuje svoje prvky v dynamickom poli. Umožnuje náhodný prístup, čo znamená, že môžeme pristupovať ku každému prvku priamo pomocou indexu.
 
@@ -61,7 +61,7 @@ Pripojenie a odstránenie prvkov z konca
   trvá, pretože všetky nasledujúce prvky 
   sa musia presunúť, aby sa vytvoril priestor pre nový prvok pri zachovaní poradia.
   
-  ###deque (obojstranná fronta)
+  ### deque (obojstranná fronta)
   (Double-ended-queue) je dynamické pole, 
   ktoré je implementované tak, aby mohlo
    rásť v oboch smeroch. Takže vloženie 
@@ -69,7 +69,7 @@ Pripojenie a odstránenie prvkov z konca
    Vkladanie prvku v strede však trvá, 
    pretože element sa musí popresúvať.
    
-   ###zoznam
+   ### zoznam
    Zoznam je implementovaný ako 
     obojstranný. Inými slovami, každý 
     prvok v zozname má svoj vlastný 
@@ -88,7 +88,7 @@ Pripojenie a odstránenie prvkov z konca
     v porovnaní s presunutím prvku vo vektore alebo fronte.
     
     
-   ##Inicializácia vektora
+   ## Inicializácia vektora
     
 ```c++  
 #include <vector>
@@ -149,9 +149,9 @@ int main ()
   
   Prázdny () vracia "true", ak je vektor prázdny, inak vráti "false".
   
-  ##Vektor - pamäťová náročnosť
+  ## Vektor - pamäťová náročnosť
   
-  ####capacity()
+  #### capacity()
    vracia kapacitu vektora (počet prvkov,
     ktoré môže vektor držať pred tým,
      ako preň program musí alokovať viac 
@@ -168,7 +168,7 @@ int main ()
     pole pod kapotou potrebné realokovať.
     
     
-   ####reserve()
+   #### reserve()
    Než sa pozrieme na reserve(), potrebujeme 
    vedieť, čo sa deje vždy, keď vektor 
    potrebuje viac miesta. Deje sa niečo podobné
@@ -189,7 +189,7 @@ kontrolu nad tým, kedy dôjde k realokácii
   ```
  tj. použitím reserve() na udržanie dostatočne veľkej kapacity vektora môžeme oddialiť realokáciu vektora.
  
- ####insert() a erase()
+ #### insert() a erase()
  Pridanie alebo odstránenie prvku 
   konca vektora pomocou push_back() 
   alebo pop_back() je veľmi efektívne. 
@@ -201,7 +201,7 @@ kontrolu nad tým, kedy dôjde k realokácii
    
    
    
-   ###Vektor - inicializácia matice 3x2
+   ### Vektor - inicializácia matice 3x2
  ```c++ 
     #include <iostream>
     #include <vector>
@@ -291,9 +291,9 @@ int main()
 
 ÚLOHA: využite multidimenzionálne vektory na výpočet maticového násobenia. 
 
-###Vektor vs zoznam
+### Vektor vs zoznam
 
-####vektor:
+#### vektor:
 1. Kontinuálna pamäť
 2. Predbežne alokuje priestor pre budúce prvky, takže môže byť potrebný ďalší priestor.
 3. Na rozdiel od zoznamu, kde je potrebný ďalší priestor pre ukazovateľ, každý prvok vyžaduje len priestor pre samotný typ prvku.
@@ -307,7 +307,7 @@ int main()
         for(int i = 0; i < 10; ++i) v.push_back(i);
         int *a = &v[0];
 ```
-####zoznam:
+#### zoznam:
 1. Nekontinuálna pamäť
 2. Žiadna prealokovaná pamäť. 
 3. Každý prvok vyžaduje väčší priestor pre uzol, ktorý obsahuje element, vrátane ukazovateľov na ďalší a predchádzajúci prvok v zozname.
