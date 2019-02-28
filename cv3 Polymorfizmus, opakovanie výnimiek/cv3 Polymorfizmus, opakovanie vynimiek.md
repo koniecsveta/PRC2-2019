@@ -135,9 +135,7 @@ pretože neskôr bola definovaná v každej odvodenej triede. Nevirtuálne
 
 
 Preto to, čo v podstate kľúcové slovo virtuál robí je, že umožňuje členovi odvodenej triedy s 
-rovnakým názvom ako názov člena v základnej triede, aby bol zavolaný z ukazovateľa. A presnejšie,
- ak je typ ukazovateľa ukazovateľ na základnú triedu, ktorý ukazuje na objekt odvodenej triedy 
- (ako v predchádzajúcom príklade).
+rovnakým názvom ako názov člena v základnej triede, aby bol zavolaný z ukazovateľa. 
  
  
  
