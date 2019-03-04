@@ -263,7 +263,7 @@ Vovnútri triedy a štruktúry nemusíme používať Node<ItemType> namiesto Nod
 CV: Na implementáciu vyššie uvedenej triedy musíme definovať šablónu pre každú členskú funkciu
 
 
-TYP 1: Vo vnútri List<ItemType> sa predpokladá, že šablóna je špecifikovaná, tj. výskyt 
+TIP 1: Vo vnútri List<ItemType> sa predpokladá, že šablóna je špecifikovaná, tj. výskyt 
 List ako argumentu kopírovacieho konštruktora nepotrebuje kvantifikáciu (explicitná
 kvantifikácia je validná ale redundantná).
 ```c++
@@ -273,7 +273,7 @@ List<ItemType>::List(const List& L) {
 }
 ```
 
-TYP 2: Mimo scope šablóny List<ItemType> musíme názov triedy List korektne kvantifikovať, tj. aj
+TIP 2: Mimo scope šablóny List<ItemType> musíme názov triedy List korektne kvantifikovať, tj. aj
 výskyt List v návratovom type priraďovacieho operátora: 
 ```c++
 template <typename ItemType>
@@ -287,7 +287,7 @@ List<ItemType>& List<ItemType>::operator=(const List& L) {
 }
 ```
 
-TYP 3: Originálna formulácia zoznamu predpokladá, že ItemType je int,
+TIP 3: Originálna formulácia zoznamu predpokladá, že ItemType je int,
  a preto sú všetky argumenty ItemType predávané hodnotou. 
  To nie je optimálne pre veľký ItemType, napr. reťazec. 
  Preto by sa členské funkcie mali prepísať tak, 
