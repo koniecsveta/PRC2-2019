@@ -287,7 +287,7 @@ List<ItemType>& List<ItemType>::operator=(const List& L) {
 }
 ```
 
-TIP 3: Originálna formulácia zoznamu predpokladá, že ItemType je int,
+TIgP 3: Originálna formulácia zoznamu predpokladá, že ItemType je int,
  a preto sú všetky argumenty ItemType predávané hodnotou. 
  To nie je optimálne pre veľký ItemType, napr. reťazec. 
  Preto by sa členské funkcie mali prepísať tak, 
