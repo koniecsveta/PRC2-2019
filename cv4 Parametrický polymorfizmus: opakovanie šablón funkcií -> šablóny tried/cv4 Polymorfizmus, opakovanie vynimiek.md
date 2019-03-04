@@ -4,6 +4,7 @@
 Polymorfizmus v zmysle používania odvodených tried od základných tried:
 
 ![alt text](polymorphic-cats.gif)
+Polymorfne macky by [James Halliday](https://substack.net)
 
 ```c++ 
 #include <iostream>
