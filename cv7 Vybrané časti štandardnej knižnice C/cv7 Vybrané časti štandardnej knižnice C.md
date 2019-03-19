@@ -152,7 +152,7 @@ abs, div, labs, ldiv, llabs, lldiv
 NULL, RAND_MAX, EXIT_FAILURE, EXIT_SUCCESS...
 
 
-### DOMÁCA ÚLOHA:
+### POVINNÁ DOMÁCA ÚLOHA (odovzdať do konca semestra):
 Uvažujme 3  rôzne generátory náhodných čísel
 
 1. 'defaultnú' c++ rand() funkciu
