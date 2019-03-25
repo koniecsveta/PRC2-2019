@@ -1,4 +1,4 @@
-#<cstdio>
+# <cstdio>
 
 Štadndardný vstup a výstup sa považuje za súbor (s tým rozdielom, že "naozajstný súbor" má meno a je niekde uložený etc.). Na rozdiel od
 ostatných súborov (textových/binárnych/...) sú štandardný vstup a výstup otvorené a programu prístupné automaticky.
@@ -313,7 +313,7 @@ int main ()
 
 
 
-# Čítanie z txt súboru
+## Čítanie z txt súboru
  ```c++ 
 int fscanf(FILE *stream, const char *format, ...);
  ```
