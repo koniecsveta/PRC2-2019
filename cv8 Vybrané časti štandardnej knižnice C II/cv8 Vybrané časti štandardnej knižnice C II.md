@@ -14,8 +14,8 @@ FILE *stdout; //standardny vystup - typicky obrazovka
 FILE *stderr; //standardny chybovy vystup - typicky obrazovka
 ```
 
-Všetko sú to ukazovatele na štruktúru FILE, ktorá je deklarovaná v <cstdio> a je určená na prácu so súbormi. Táto štruktúra je argumentov
-mnohých funkcií z <cstdio>.
+Všetko sú to ukazovatele na štruktúru FILE, ktorá je deklarovaná v cstdio a je určená na prácu so súbormi. Táto štruktúra je argumentov
+mnohých funkcií z cstdio.
 
 
 
@@ -185,7 +185,7 @@ scanf("%i", ui);
 
 
 ## Prístup k súborom
-Knižnica <cstdio> deklaruje prístup k súborom pomocou súborového prúdu. K súborovému prúdu sa pristupuje pomocou štruktúry FILE. Súborové
+Knižnica cstdio deklaruje prístup k súborom pomocou súborového prúdu. K súborovému prúdu sa pristupuje pomocou štruktúry FILE. Súborové
 prúdy majú obvykle vyrovnávaciu pamäť (buffer) - pri otvorení sa z diku načíta niekoľko stoviek bajtov do bufferu a keď chceme niečo prečítať, tak
 čítame rovno z buffera. Keď sa dostaneme na koniec buffera, tak sa doň z disku načíta ďalší veľký kus pamäte. Pri zápise sa sapisované dáta
 nezapisujú znak po znaku, ale tiež sa najprv zhromaždia v bufferi - všetko sa zapíše naraz, keď sa naplní, pretože tak je to rýchlejšie.
@@ -204,7 +204,7 @@ Prístup k súborom delíme na textový a binárny. Textový súbor = súbor, v 
  
  ## Limity
  
- V <cstdio> sú konštanty 
+ V cstdio sú konštanty 
  
  FOPEN_MAX = limit pre počet simultánne otvorených súborových streamov
  
