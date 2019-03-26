@@ -47,10 +47,10 @@ vracia počet znakov zapísaných do výstupu alebo EOF (=koniec súboru alebo t
     |  u |  celé číslo bez znamienka |  
     | o| celé číslo v osmičkovej sústave |      
     | x, X|  číslo v šestnástkovej sústave. ABCDEF sa budú vypisovať ako malé s x, ako veľké s X|   
-      | p|  ukazovateľ|  
-      |f|  racionálne číslo (float, double) bez exponentu | 
-      | a, A | šestnástkové racionálne Číslo| 
-      | e, E | racionálne číslo s exponentom, implicitne jedna pozícia pred desatinnou bodkou, šesť za ňou. Exponent e alebo E|  
+    | p|  ukazovateľ|  
+    |f|  racionálne číslo (float, double) bez exponentu | 
+    | a, A | šestnástkové racionálne Číslo| 
+    | e, E | racionálne číslo s exponentom, implicitne jedna pozícia pred desatinnou bodkou, šesť za ňou. Exponent e alebo E|  
     | g, G|  racionálne číslo s exponentom alebo  bez neho. Neobsahuje desatinnú bodku ak nemá desatinnú časť | 
     |c|  jeden znak | 
     |s|  reťazec| 
@@ -78,14 +78,14 @@ vracia počet znakov zapísaných do výstupu alebo EOF (=koniec súboru alebo t
  hodnoty width:
  
     |  n |  vypíše najmenej n znakov doplnených medzerami |  
-    | 0n| vypíše sa najmenej n znakov doplnených nulami |      
-    | *|  vypíše sa najmenej n znakov, kde n je ďalší argument funkcie printf()|  
+    | 0n | vypíše sa najmenej n znakov doplnených nulami |      
+    | *  |  vypíše sa najmenej n znakov, kde n je ďalší argument funkcie printf()|  
     
  hodnoty prec:
  
     |  .0 |  e,E,f: nezobrazí sa desatinná bodka; d,i,o,u,x: nastaví štandardné hodnoty|  
-    | .n| d,i,o,u,x: min počet číslic, e.E.f: počet desatinných číslic, g,G: počet platných miest, s: max počet znakov |      
-    | .*|  ako presnosť sa použije nasledujúci parameter funkcie printf()|  
+    | .n  | d,i,o,u,x: min počet číslic, e.E.f: počet desatinných číslic, g,G: počet platných miest, s: max počet znakov |      
+    | .*  |  ako presnosť sa použije nasledujúci parameter funkcie printf()|  
     
     
       
@@ -113,8 +113,8 @@ vracia počet znakov zapísaných do výstupu alebo EOF (=koniec súboru alebo t
   hodnoty flags:
   
      | - |  zarovnanie zlava|  
-      | +| pri čísle sa vždy zobrazí znamieko |      
-      | medzera|  pri kladných číslach bude namiesto znamienka + medzera|  
+     | + | pri čísle sa vždy zobrazí znamieko |      
+     | medzera|  pri kladných číslach bude namiesto znamienka + medzera|  
       
   Znaky h l a L označujú typ čísla. Znak h typ short, l dlouhé celé číslo, L long double.
         ```c++ 
@@ -146,16 +146,16 @@ význam položiek sekvencie:
 možné typy konverzií:
 
       | type|  význam |   
-        |  ------  | ------    |
-        |  d|  celé číslo v desiatkovej sústave | 
-        |  u |  celé číslo bez znamienka |  
-        | o| celé číslo v osmičkovej sústave |      
-        | x| celé číslo v šestnástkovej sústave|  
-          | i|  celé číslo defaultne desiatkové, prefix 0 znamená osmičkové a 0x šestnástkové|  
-          | n| počet doteraz preČítaných znakov v aktuálnom volaní scanf()| 
-          | e, f, g|  racionálne čísla typu float, možno modifikovať pomocou l a L|  
-          |s|  reťazec, úvodné biele znaky sa preskočia, na konci sa pridá znak '\0'| 
-          | c| znak, ak je zadaná šírka, tak sa číta reťazec bez preskočenia bielych znakov|  
+      |  ------  | ------    |
+      |  d|  celé číslo v desiatkovej sústave | 
+      |  u |  celé číslo bez znamienka |  
+      | o| celé číslo v osmičkovej sústave |      
+      | x| celé číslo v šestnástkovej sústave|  
+      | i|  celé číslo defaultne desiatkové, prefix 0 znamená osmičkové a 0x šestnástkové|  
+      | n| počet doteraz preČítaných znakov v aktuálnom volaní scanf()| 
+      | e, f, g|  racionálne čísla typu float, možno modifikovať pomocou l a L|  
+      |s|  reťazec, úvodné biele znaky sa preskočia, na konci sa pridá znak '\0'| 
+      | c| znak, ak je zadaná šírka, tak sa číta reťazec bez preskočenia bielych znakov|  
     
 
 ```c++ 
@@ -341,7 +341,7 @@ int main ()
 }
  ```
 
-ÚLOHA: napíšte program, ktorý načíta zo súboru myfile.txt 10 hexadecimálnych čísel a do iného súboru zapíše ich maximum,
+ÚLOHA (POVINNÁ): napíšte program, ktorý načíta zo súboru myfile.txt 10 hexadecimálnych čísel a do iného súboru zapíše ich maximum,
  minimum, priemer a medián v desiatkovej sústave s presnosťou na 4 desatinné miesta v tvare:
 
    ```c++ 
