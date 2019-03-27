@@ -293,7 +293,7 @@ int main ()
         FILE *subor;
         char text[255];
 
-        soubor = fopen(FILENAME, "a+"); /* soubor se otevre pro aktualizaci,
+        subor = fopen(FILENAME, "a+"); /* soubor se otevre pro aktualizaci,
                                     neexistujici soubor se vytvori */
         do {
             fprintf("Zadejte slovo, ktere chcete zapsat do souboru\n"
@@ -341,7 +341,7 @@ int main ()
 }
  ```
 
-ÚLOHA (POVINNÁ): napíšte program, ktorý načíta zo súboru myfile.txt 10 hexadecimálnych čísel a do iného súboru zapíše ich maximum,
+POVINNÁ ÚLOHA (ODOVZDAŤ DO KONCA SEMESTRA): napíšte program, ktorý načíta zo súboru myfile.txt 10 hexadecimálnych čísel a do iného súboru zapíše ich maximum,
  minimum, priemer a medián v desiatkovej sústave s presnosťou na 4 desatinné miesta v tvare:
 
    ```c++ 

@@ -10,4 +10,6 @@ zapoctova uloha a preskusanie
 
 zapocet z PRC2 sa da zapisat az po zapisani zapoctu z PRC1
 
+cvičenie v piatok 29.3. odpada a bude nahradene v piatok 5.3.
+
 
