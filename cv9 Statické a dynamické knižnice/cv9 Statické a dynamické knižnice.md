@@ -157,3 +157,6 @@ a potom
  
  postup pre windows + visual studio:
 
+https://www.bogotobogo.com/Win32API/Win32API_DLL.php
+
+
