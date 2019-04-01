@@ -1,4 +1,3 @@
-
 # cstdio
 
 Štadndardný vstup a výstup sa považuje za súbor (s tým rozdielom, že "naozajstný súbor" má meno a je niekde uložený etc.). Na rozdiel od
