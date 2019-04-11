@@ -8,22 +8,24 @@ Format vstupu:
 
 Prvy riadok vstupu obsahuje cislo t, pocet pripadov.
 Kazdy pripad sa sklada z dvoch riadkov.
-Prvy riadok obsahuje dva integery oddelene medzerou, pocet studentov n (size[a]) a hranicny pocet studentov pre zrusenie prednasky k
+Prvy riadok obsahuje dva integery oddelene medzerou, pocet studentov n (size[a]) a hranicny pocet studentov pre zrusenie prednasky k.
 Druhy riadok obsahuje n medzerou oddelenych integerov (a[1], a[2], ..., a[n]), ktore predstavuju casy prichodu studentov.
 
 Poznamka: 
 
-zaporny cas prichodu a[i]<= 0 indikuje vcasny prichod, kladny cas prichodu (a[i]> 0) indikuje ze studen zmeskal a[i] minut
+zaporny cas prichodu a[i]<= 0 znamena vcasny prichod, kladny cas prichodu (a[i]> 0) znamena ze student zmeskal a[i] minut
 
 
-napriklad ak mame n=6 studentov, ktori prisli v casoch a = [-1,-1,0,0,1,1], tak 4 prisli nacas a 2 neskoro. Ak je na hodine treba
+napriklad ak mame n=6 studentov, ktori prisli v casoch a = [-1,-1,0,0,1,1], tak 4 prisli nacas a 2 neskoro. Ak je na hodine potrebnych
 aspon k = 4 studentov na to, aby sa prednaska konala, tak by sa v tomto pripade konala. Ak by bolo k=5, tak by sa prednaska zrusila.
 
 Popis funkcie:
 
 Doplne funkciu angryProfessor. Musi vracat YES ak sa prenaska ma zrusit, NO inak.
 angryProfessor ma nasledujuce vstupne parametre:
+
  k: hranicna hodnota poctu studentov 
+ 
  a: pole integerov reprezentujuce casy prichodov
 
 
