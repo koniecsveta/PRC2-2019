@@ -73,7 +73,7 @@ using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the jumpingOnClouds function below.
+// Doplnte funkciu jumpingOnClouds 
 int jumpingOnClouds(vector<int> c) {
 
 
@@ -81,7 +81,7 @@ int jumpingOnClouds(vector<int> c) {
 
 int main()
 {
-    ofstream fout(getenv("OUTPUT_PATH"));
+        ofstream fout("output.txt",std::ofstream::out);
 
     int n;
     cin >> n;
