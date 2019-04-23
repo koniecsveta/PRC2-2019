@@ -2,7 +2,7 @@
 Student sa zapisal na n workshopov a chce sa 
 zucastnit maximalneho poctu workshopov tak, aby sa ziadne dva neprekryvali.
 
-Implementujte 2 struktury:
+## Implementujte 2 struktury:
 
 1. strukt Workshop obsahujucu nasledujuce cleny:
     - cas startu workshopu
@@ -12,7 +12,7 @@ Implementujte 2 struktury:
     - integer n (pocet workshopov, na ktore sa student zapisal)
     - pole typu Workshop velkosti n
 
-Implementujre 2 funkcie:
+## Implementujre 2 funkcie:
 
 1. Available_Workshops* initialize(int start_time[], int duration[], int n)
     - Vytvori objekt typu Available_Workshops a inicializuje jeho prvky pomocou prvkov v parametroch start_time[] a duration[] (oba velkosti n). start_time[i] a duration[i] predstavuju cas startu a cas trvania iteho workshopu. Tato funkcia musi vratit ukazatel na objekt typu Available_Workshops
@@ -20,14 +20,14 @@ Implementujre 2 funkcie:
     - Vrati maximalny pocet workshopov, ktorych sa student moze zucastnit - bez prekryvania. Nasledujuci workshop nemoze byt navstiveny, kym sa predosly neskonci.
 
 poznamka: pole neznamej velkosti n mozno deklarovat takto:
-
+```c++  
 DataType* arrayName = new DataType[n];
-
-Format vstupu:
+```
+## Format vstupu:
 
 Vstup je za vas spracovany kodom nizsie, vasou ulohou je iba napisat funkcie tak, aby splnali zadanu specifikaciu.
 
-Obmedzenia:
+## Obmedzenia:
 
 1 <= N <= 10^5
 
@@ -35,24 +35,24 @@ Obmedzenia:
 
 0 <= duration_i <= 10^3
 
-Format vystupu:
+## Format vystupu:
 Vystup je za vas spracovany.
 
 Vasa funkcia initialize musi vratit ukazatek na objekt typu Available_Workshops.
 Vasa funkcia CalculateMaxWorkshops musi vratit maximalny pocet neprekrzvajucich sa workshopov, ktorych sa student moze zucastnit.
 
-Vzorovy vstup:
+## Vzorovy vstup:
 ```c++
 6
 1 3 0 5 5 8
 1 1 6 2 4 1
 ```
 
-Vzorovy vystup:
+## Vzorovy vystup:
 
 CalculateMaxWorkshops by mala vratit 4.
 
-Vysvetlenie
+## Vysvetlenie
 
 Prvy riadok obsahuje n - pocet workshopov.
 
