@@ -27,7 +27,9 @@ Vypis poctu sviecok, ktore sestra sfukne.
 
 ## Vzorovy vstup:
 
+
 4
+
 3 2 1 3
 
 ## Vzorovy vystup:
