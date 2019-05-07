@@ -24,6 +24,7 @@ Dalsich n riadkov obsahuje string m znakov, kde znak je bud G (good) alebo B (ba
 ## Obmedzenia
 
 2 <= n <= 15
+
 2 <= m <= 15
 
 ## Format vystupu
@@ -31,20 +32,20 @@ Dalsich n riadkov obsahuje string m znakov, kde znak je bud G (good) alebo B (ba
 Najdite 2 plusy, ktore je mozne vykreslit na zadanej mriezke cez dobre bunky a vratte integer udavajuci maximalny produkt ich oblasti.
 
 ## Vzorovy vstup 0
-
+```c++  
 5 6
 GGGGGG
 GBBBGB
 GGGGGG
 GGBBGB
 GGGGGG
-
+```
 ## Vzorovy vystup 0
 
 5
 
 ## Vzorovy vstup 1
-
+```c++  
 6 6
 BGBBGB
 GGGGGG
@@ -52,7 +53,7 @@ BGBBGB
 GGGGGG
 BGBBGB
 BGBBGB
-
+```
 ## Vzorovy Vystup 1
 
 25
