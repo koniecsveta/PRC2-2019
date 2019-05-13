@@ -16,11 +16,11 @@ Calculator::Calculator(QWidget *parent)
     QVBoxLayout *lOperators = new QVBoxLayout;
     QHBoxLayout *lButtons = new QHBoxLayout;
 
-    lblLeft = new QLabel("Left operator: ");
+    lblLeft = new QLabel(tr("&Left operator: "));
     editLeft = new QLineEdit;
     lblLeft->setBuddy(editLeft);
 
-    lblRight = new QLabel("Right operator");
+    lblRight = new QLabel(tr("&Right operator"));
     editRight = new QLineEdit;
     lblRight->setBuddy(editRight);
     lOperands->addWidget(lblLeft);
@@ -30,11 +30,11 @@ Calculator::Calculator(QWidget *parent)
     lOperands->addStretch();
     lTop->addLayout(lOperands);
 
-    lblOperator = new QLabel("Operator: ");
-    rbAdd = new QRadioButton("Addition");
-    rbSub = new QRadioButton("Subtraction");
-    rbMul = new QRadioButton("Multiplication");
-    rbDiv = new QRadioButton("Division");
+    lblOperator = new QLabel(tr("Operator: "));
+    rbAdd = new QRadioButton(tr("&Addition"));
+    rbSub = new QRadioButton(tr("&Subtraction"));
+    rbMul = new QRadioButton(tr("&Multiplication"));
+    rbDiv = new QRadioButton(tr("&Division"));
     lOperators->addWidget(lblOperator);
     lOperators->addWidget(rbAdd);
     lOperators->addWidget(rbSub);
@@ -44,9 +44,9 @@ Calculator::Calculator(QWidget *parent)
     rbAdd->setChecked(true);
     lTop->addLayout(lOperators);
 
-    btnAbout = new QPushButton("About");
-    btnCalculate = new QPushButton("Calculate");
-    btnQuit = new QPushButton("Quit");
+    btnAbout = new QPushButton(tr("About"));
+    btnCalculate = new QPushButton(tr("&Calculate"));
+    btnQuit = new QPushButton(tr("&Quit"));
 
     lButtons->addWidget(btnAbout);
     lButtons->addStretch();
@@ -56,19 +56,19 @@ Calculator::Calculator(QWidget *parent)
     lMain->addLayout(lTop);
     lMain->addLayout(lButtons);
     setLayout(lMain);
-    setWindowTitle("Calculator");
+    setWindowTitle(tr("Calculator"));
     connect(btnAbout, SIGNAL(clicked()), this, SLOT(showAbout()));
     connect(btnQuit, SIGNAL(clicked()), this, SLOT(close()));
     connect(btnCalculate, SIGNAL(clicked()), this, SLOT(calculate()));
 }
 
 void Calculator::showAbout(){
-    QMessageBox::about(this, "About Calculator",
-                       "Sample calculator created by FNSPE students");
+    QMessageBox::about(this, tr("About Calculator"),
+                       tr("Sample calculator created by FNSPE students"));
 }
 
 void Calculator::error(QString msg){
-    QMessageBox::warning(this, "Error", msg);
+    QMessageBox::warning(this, tr("Error"), msg);
 }
 
 void Calculator::calculate(){
@@ -76,12 +76,12 @@ void Calculator::calculate(){
     bool ok;
     x = editLeft->text().toDouble(&ok);
     if(!ok){
-        error("Left operand must be a number!");
+        error(tr("Left operand must be a number!"));
         return;
     }
     y = editRight->text().toDouble(&ok);
     if(!ok){
-        error("Right operand must be a number!");
+        error(tr("Right operand must be a number!"));
         return;
     }
     if(rbAdd->isChecked()){
@@ -92,15 +92,15 @@ void Calculator::calculate(){
         result = x * y;
     } else if(rbDiv->isChecked()){
         if(y == 0){
-            error("Division by zero!");
+            error(tr("Division by zero!"));
             return;
         }
         result = x / y;
     } else{
-        error("No operator selected!");
+        error(tr("No operator selected!"));
         return;
     }
-    QMessageBox::information(this, "Result",
+    QMessageBox::information(this, tr("Result"),
                 tr("Result is %1").arg(result));
 }
 
