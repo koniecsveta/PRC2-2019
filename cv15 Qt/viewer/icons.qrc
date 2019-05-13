@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons/quit.png</file>
+        <file>icons/open.png</file>
+        <file>icons/zoomIn.png</file>
+        <file>icons/zoomOut.png</file>
+        <file>icons/next.png</file>
+        <file>icons/prev.png</file>
+        <file>icons/zoomFit.png</file>
+        <file>icons/zoom1.png</file>
+    </qresource>
+</RCC>
